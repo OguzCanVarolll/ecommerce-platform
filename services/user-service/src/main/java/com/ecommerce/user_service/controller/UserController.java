@@ -1,6 +1,6 @@
 package com.ecommerce.user_service.controller;
 
-import com.ecommerce.user_service.entity.User;
+import com.ecommerce.user_service.domain.User;
 import com.ecommerce.user_service.service.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;

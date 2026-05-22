@@ -1,6 +1,6 @@
 package com.ecommerce.user_service.service;
 
-import com.ecommerce.user_service.entity.User;
+import com.ecommerce.user_service.domain.User;
 import com.ecommerce.user_service.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -34,7 +34,7 @@ public class UserService {
 
     public User updateUser(Long id, User updatedUser) {
         User user = getUserById(id);
-        user.setName(updatedUser.getName());
+        user.setFullName(updatedUser.getFullName());
         user.setPassword(updatedUser.getPassword());
         return userRepository.save(user);
     }
